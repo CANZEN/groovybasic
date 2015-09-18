@@ -1,0 +1,29 @@
+/**
+ * Goovy for Beginners
+ * Carlos Nakazato
+ **/
+
+/**
+ * Groovy Installation
+ * Download groovy from http://www.groovy-lang.org/download.html
+ * Installation instructions: http://www.groovy-lang.org/install.html
+ *
+ **/
+
+/**
+ * References
+ * Most examples are taken from here: http://www.groovy-lang.org/groovy-dev-kit.html
+ **/
+
+/********************************************************************
+ * Read file and print lines
+**/
+
+//baseDir = "/Users/carlos/github/groovybasic/data/"
+
+baseDir = "../../data/"
+filename = "teste1.txt"
+
+new File(baseDir, filename).eachLine { line ->
+    println line
+}
